@@ -12,5 +12,52 @@
         <h1>GIT</h1>
         <p>Desarrollo Colaborativo</p>
     </header>
+<<<<<<< HEAD
+=======
+    <section>
+        <h2>Area de GIT</h2>
+        <article>
+            <h3>Working Directory</h3>
+            <p>Es el área de trabajo, donde rara vez vamos a estar utilizaando la línea de comandos, salvo por el inicio del proyecto o a lo sumo, la elimilación del mismo. Se refiere a la carpeta donde iniciamos el repositorio y basicamente donde vamos a crear, modificar y eliminar los archivos que forman parte de nuestro proyecto.</p>
+            <ul class="commands">
+                <li><strong>dir || ls</strong> muestra el contenido de la carpeta actual.</li>
+                <li><strong>mkdir &lt;name></strong> crea una carpeta con el nombre indicado.</li>
+                <li><strong>cd &lt;name</strong> abre la carpeta con el nombre indicado.</li>
+                <li><strong>git init</strong> inicializa un repositorio en Git.</li>
+                <li><strong>rm -rf .git</strong> eliminar el repositorio de manera forzada.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Staging Area(INDEX)</h3>
+            <p>
+                El area de control de cambio corresponde a un archivo que se encuentra en la carpeta .git yse utiliza para realizar las carpetas de pantallas del código (Snapshot) de los diferentes archivos del proyecto. Aquí se realiza el siguimiento de los mismo, para realizar las confirmación y poder acceder a los cambios dentro de la historia de nuestro proyecto. Es importante tener en cuenta que todo archivo que no sea agregado al INDEX, no se podra recuperar en cado de ser eliminado.
+            </p>
+            <ul class="commands">
+                <li><strong>git status</strong> muestra el estado de los archivos con respecto a la última confirmación, en caso que exista.</li>
+                <ul>
+                    <li><strong>untracked: </strong> si al archivo no se le está realizando seguimiento.</li>
+                    <li><strong>staged: </strong> el archivo o los cambios fueron agregado, pero, aun no se han confirmado.</li>
+                    <li><strong>modified: </strong> el archivo difiere con respecto a lo almacenado en la última confirmación.</li>
+                    <li><strong>commited: </strong> los cambios fueron almacenados en una confirmación.</li>
+                </ul>
+                <li><strong>git add &lt;file></strong> agrega al INDEX el/los archivos seleccionados.</li>
+                <li><strong>git re --file</strong> quita del INDEX el archivo seleccionado.</li>
+                <li><strong>git resstore --stage &lt;file></strong> remueve los cambios de los archivos agregados al INDEX.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Repository </h3>
+            <p>Es el área donde se almacena los cambios en formato BLOB(Binary Large Object File). Solamente se confirman las modificaciones agregadas al INDEX; y mediante apuntadores  podemos navegar dentro del historial.</p>
+            <ul>
+                <li><strong>git commit</strong> abre el editor para ingresar confirmación.</li>
+                <li><strong>git blame &lt;file</strong> muestra línea por línea los autores de las confirmaciones, en caso que existan.</li>
+                <li><strong>git log</strong> muestra el historial de confirmaciones en orden descendente.</li>
+                <li><strong>git remote add &lt;alias</strong> agrega una dirección remota asignando un alias.</li>
+                <li><strong>git fetch &lt;remote</strong> obtiene el historial de cambios de un repositorio remoto.</li>
+                <li><strong>git push &lt;remote> &lt;url></strong> envia a un repositorior remoto los cambios.</li>
+            </ul>
+        </article>
+    </section>
+>>>>>>> aebb13b503ed5241f23eaac0fcb607d7ace920ac
 </body>
 </html>
