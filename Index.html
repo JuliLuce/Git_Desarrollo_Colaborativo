@@ -24,6 +24,22 @@
                 <li><strong>rm -rf .git</strong>eliminar el repositorio de manera forzada </li>
             </ul>
         </article>
+            <h3>Staging Area(INDEX)</h3>
+            <p>
+                El area de control de cambio corresponde a un archivo que se encuentra en la carpeta .git yse utiliza para realizar las carpetas de pantallas del código (Snapshot) de los diferentes archivos del proyecto. Aquí se realiza el siguimiento de los mismo, para realizar las confirmación y poder acceder a los cambios dentro de la historia de nuestro proyecto. Es importante tener en cuenta que todo archivo que no sea agregado al INDEX, no se podra recuperar en cado de ser eliminado.
+            </p>
+            <ul class="commands">
+                <li><strong>git status</strong></li> muestra el estado de los archivos con respecto a la última confirmación, en caso que exista.
+                <ul>
+                    <li><strong>untracked: </strong>si al archivo no se le está realizando seguimiento</li>
+                    <li><strong>staged: </strong>el archivo o los cambios fueron agregado, pero, aun no se han confirmado</li>
+                    <li><strong>modified: </strong>el archivo difiere con respecto a lo almacenado en la última confirmación</li>
+                    <li><strong>commited: </strong>los cambios fueron almacenados en una confirmación</li>
+                </ul>
+                <li><strong>git add &lt;file></strong>agrega al INDEX el/los archivos seleccionados</li>
+                <li><strong>git re --file</strong>quita del INDEX el archivo seleccionado</li>
+                <li><strong>git resstore --stage &lt;file></strong>remueve los cambios de los archivos agregados al INDEX</li>
+            </ul>
         <article>
             <h3></h3>
             <p></p>
